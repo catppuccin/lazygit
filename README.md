@@ -41,6 +41,12 @@
 3. Replace the `theme` section of `~/.config/lazygit/config.yml` with the theme you want to activate (from `themes`)
 4. Close and reopen `lazygit`, and see your new theme!
 
+## 🙋 FAQ
+
+-	Q: **_"Why is the background wrong?"_**\
+	A: Lazygit uses your terminal background. You should set it to the relevant background
+       for your theme.
+
 ## 💝 Thanks to
 
 - [nullishamy](https://github.com/nullishamy)
