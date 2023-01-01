@@ -36,16 +36,47 @@
 
 ## Usage
 
-1. Clone this repository locally
-2. Ensure `~/.config/lazygit` exists. If it doesn't, you can run `lazygit` to launch and setup the directory.
-3. Replace the `theme` section of `~/.config/lazygit/config.yml` with the theme you want to activate (from `themes`)
-4. Close and reopen `lazygit`, and see your new theme!
+1.  Clone this repository locally
+2.  Ensure `~/.config/lazygit` exists. If it doesn't, you can run `lazygit` to launch and setup the directory.
+3.  Replace the `theme` section of `~/.config/lazygit/config.yml` with the theme you want to activate (from `themes`).
+    For example, if you want to use the catppuccin **mocha** theme, then copy the contents of `themes/mocha.yml` and paste them directly into your lazygit `config.yml` as follows:
+
+         <details>
+         <summary><b>mocha theme</b> lazygit <code>config.yml</code></summary>
+
+             ```
+              gui:
+                # use the mocha catpuccin theme
+                theme:
+                  lighttheme: false
+                  activebordercolor:
+                    - "#a6e3a1" # green
+                    - bold
+                  inactivebordercolor:
+                    - "#cdd6f4" # text
+                  optionstextcolor:
+                    - "#89b4fa" # blue
+                  selectedlinebgcolor:
+                    - "#313244" # surface0
+                  selectedrangebgcolor:
+                    - "#313244" # surface0
+                  cherrypickedcommitbgcolor:
+                    - "#94e2d5" # teal
+                  cherrypickedcommitfgcolor:
+                    - "#89b4fa" # blue
+                  unstagedchangescolor:
+                    - red # red
+             ```
+
+         </details>
+
+4.  Close and reopen `lazygit`, and see your new theme!
 
 ## 🙋 FAQ
 
--	Q: **_"Why is the background wrong?"_**\
-	A: Lazygit uses your terminal background. You should set it to the relevant background
-       for your theme.
+- Q: **_"Why is the background wrong?"_**\
+  A: Lazygit uses your terminal background. You should set it to the relevant background
+  for your theme.
 
 ## 💝 Thanks to
 
