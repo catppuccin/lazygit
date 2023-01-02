@@ -36,16 +36,47 @@
 
 ## Usage
 
-1. Clone this repository locally
-2. Ensure `~/.config/lazygit` exists. If it doesn't, you can run `lazygit` to launch and setup the directory.
-3. Replace the `theme` section of `~/.config/lazygit/config.yml` with the theme you want to activate (from `themes`)
-4. Close and reopen `lazygit`, and see your new theme!
+1.  Clone this repository locally
+2.  Ensure `~/.config/lazygit` exists. If it doesn't, you can run `lazygit` to launch and setup the directory.
+3.  Replace the `theme` section of `~/.config/lazygit/config.yml` with the theme you want to activate (from `themes`).
+    For example, if you want to use the catppuccin **mocha** theme, then copy the contents of `themes/mocha.yml` and paste them directly into your lazygit `config.yml` as follows:
+
+    <details>
+    <summary><b>mocha theme</b> lazygit <code>config.yml</code></summary>
+
+    ```
+     gui:
+       # use the mocha catpuccin theme
+     theme:
+       lightTheme: false
+       activeBorderColor:
+         - "#a6e3a1" # Green
+         - bold
+       inactiveBorderColor:
+         - "#cdd6f4" # Text
+       optionsTextColor:
+         - "#89b4fa" # Blue
+       selectedLineBgColor:
+         - "#313244" # Surface0
+       selectedRangeBgColor:
+         - "#313244" # Surface0
+       cherryPickedCommitBgColor:
+         - "#94e2d5" # Teal
+       cherryPickedCommitFgColor:
+         - "#89b4fa" # Blue
+       unstagedChangesColor:
+         - red # Red
+    ```
+
+    </details>
+
+4.  Close and reopen `lazygit`, and see your new theme!
 
 ## 🙋 FAQ
 
--	Q: **_"Why is the background wrong?"_**\
-	A: Lazygit uses your terminal background. You should set it to the relevant background
-       for your theme.
+- Q: **_"Why is the background wrong?"_**\
+  A: Lazygit uses your terminal background. You should set it to the relevant background
+  for your theme.
 
 ## 💝 Thanks to
 
