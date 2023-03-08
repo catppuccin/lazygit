@@ -45,27 +45,27 @@
     <summary><b>mocha theme</b> lazygit <code>config.yml</code></summary>
 
     ```
-     gui:
-       # use the mocha catpuccin theme
-     theme:
-       lightTheme: false
-       activeBorderColor:
-         - "#a6e3a1" # Green
-         - bold
-       inactiveBorderColor:
-         - "#cdd6f4" # Text
-       optionsTextColor:
-         - "#89b4fa" # Blue
-       selectedLineBgColor:
-         - "#313244" # Surface0
-       selectedRangeBgColor:
-         - "#313244" # Surface0
-       cherryPickedCommitBgColor:
-         - "#94e2d5" # Teal
-       cherryPickedCommitFgColor:
-         - "#89b4fa" # Blue
-       unstagedChangesColor:
-         - red # Red
+    gui:
+      # use the mocha catpuccin theme
+      theme:
+        lightTheme: false
+        activeBorderColor:
+          - "#a6e3a1" # Green
+          - bold
+        inactiveBorderColor:
+          - "#cdd6f4" # Text
+        optionsTextColor:
+          - "#89b4fa" # Blue
+        selectedLineBgColor:
+          - "#313244" # Surface0
+        selectedRangeBgColor:
+          - "#313244" # Surface0
+        cherryPickedCommitBgColor:
+          - "#94e2d5" # Teal
+        cherryPickedCommitFgColor:
+          - "#89b4fa" # Blue
+        unstagedChangesColor:
+          - red # Red
     ```
 
     </details>
