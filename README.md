@@ -46,7 +46,7 @@
 
     ```
     gui:
-      # use the mocha catpuccin theme
+      # use the mocha catppuccin theme
       theme:
         lightTheme: false
         activeBorderColor:
