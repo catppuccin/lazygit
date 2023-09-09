@@ -37,6 +37,6 @@ Object.entries(variants)
         },
       };
 
-      Deno.writeTextFileSync(`./themes/${name}/${accent}.yaml`, stringifyYaml(theme));
+      Deno.writeTextFileSync(`./themes/${name}/${accent}.yml`, stringifyYaml(theme));
     }
   });
