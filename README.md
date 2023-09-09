@@ -69,6 +69,8 @@
 					- '#f38ba8'
 				defaultFgColor:
 					- '#cdd6f4'
+				searchingActiveBorderColor:
+					- '#f9e2af'
     ```
 
     </details>

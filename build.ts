@@ -34,6 +34,7 @@ Object.entries(variants)
           cherryPickedCommitFgColor: [palette[accent].hex],
           unstagedChangesColor: [palette.red.hex],
           defaultFgColor: [palette.text.hex],
+          searchingActiveBorderColor: [palette.yellow.hex]
         },
       };
 

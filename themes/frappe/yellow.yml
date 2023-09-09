@@ -18,3 +18,5 @@ theme:
     - '#e78284'
   defaultFgColor:
     - '#c6d0f5'
+  searchingActiveBorderColor:
+    - '#e5c890'
