@@ -36,41 +36,44 @@
 
 ## Usage
 
-1.  Clone this repository locally
-2.  Ensure `~/.config/lazygit` exists. If it doesn't, you can run `lazygit` to launch and setup the directory.
-3.  Replace the `theme` section of `~/.config/lazygit/config.yml` with the theme you want to activate (from `themes`).
-    For example, if you want to use the catppuccin **mocha** theme, then copy the contents of `themes/mocha.yml` and paste them directly into your lazygit `config.yml` as follows:
+1. Clone this repository locally
+2. Ensure `~/.config/lazygit` exists. If it doesn't, you can run `lazygit` to launch and setup the directory.
+3. Choose the flavor you want (located [in the `themes` directory of this repository](./themes))
+4. Choose the accent you want from within the flavor directory.
+5. Replace the `theme` section of `~/.config/lazygit/config.yml` with the theme you want to activate (from `themes`).
+    For example, if you want to use the catppuccin **mocha** theme, with the **blue** accent, then copy the contents of [`themes/mocha/blue.yml`](./themes/mocha/blue.ymlb) and paste them directly into your lazygit `config.yml` as follows:
 
     <details>
-    <summary><b>mocha theme</b> lazygit <code>config.yml</code></summary>
+    <summary>config.yml</summary>
 
     ```
     gui:
-      # use the mocha catppuccin theme
-      theme:
-        lightTheme: false
-        activeBorderColor:
-          - "#a6e3a1" # Green
-          - bold
-        inactiveBorderColor:
-          - "#cdd6f4" # Text
-        optionsTextColor:
-          - "#89b4fa" # Blue
-        selectedLineBgColor:
-          - "#313244" # Surface0
-        selectedRangeBgColor:
-          - "#313244" # Surface0
-        cherryPickedCommitBgColor:
-          - "#94e2d5" # Teal
-        cherryPickedCommitFgColor:
-          - "#89b4fa" # Blue
-        unstagedChangesColor:
-          - red # Red
+      # Use the mocha catppuccin theme
+			theme:
+				activeBorderColor:
+					- '#89b4fa'
+					- bold
+				inactiveBorderColor:
+					- '#a6adc8'
+				optionsTextColor:
+					- '#89b4fa'
+				selectedLineBgColor:
+					- '#313244'
+				selectedRangeBgColor:
+					- '#313244'
+				cherryPickedCommitBgColor:
+					- '#45475a'
+				cherryPickedCommitFgColor:
+					- '#89b4fa'
+				unstagedChangesColor:
+					- '#f38ba8'
+				defaultFgColor:
+					- '#cdd6f4'
+				searchingActiveBorderColor:
+					- '#f9e2af'
     ```
 
     </details>
-
-4.  Close and reopen `lazygit`, and see your new theme!
 
 ## 🙋 FAQ
 
