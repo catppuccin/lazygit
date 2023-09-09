@@ -20,6 +20,9 @@ const accents = [
   "lavender",
 ] as const;
 
+const start = performance.now()
+let count = 0
+
 Object.entries(variants)
   .forEach(([name, palette]) => {
     for (const accent of accents) {
@@ -38,6 +41,12 @@ Object.entries(variants)
         },
       };
 
-      Deno.writeTextFileSync(`./themes/${name}/${accent}.yml`, stringifyYaml(theme));
+      Deno.writeTextFileSync(`./themes/${name}/${name}-${accent}.yml`, stringifyYaml(theme));
+      Deno.writeTextFileSync(`./themes-mergable/${name}/${name}-${accent}.yml`, stringifyYaml({
+        gui: theme
+      }));
+      count += 2
     }
   });
+
+console.log('Built', count, 'files in', performance.now() - start, 'ms');
