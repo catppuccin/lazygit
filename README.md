@@ -38,10 +38,19 @@
 
 1. Clone this repository locally
 2. Ensure `~/.config/lazygit` exists. If it doesn't, you can run `lazygit` to launch and setup the directory.
-3. Choose the flavor you want (located [in the `themes` directory of this repository](./themes))
-4. Choose the accent you want from within the flavor directory.
-5. Replace the `theme` section of `~/.config/lazygit/config.yml` with the theme you want to activate (from `themes`).
-    For example, if you want to use the catppuccin **mocha** theme, with the **blue** accent, then copy the contents of [`themes/mocha/blue.yml`](./themes/mocha/blue.ymlb) and paste them directly into your lazygit `config.yml` as follows:
+
+At this point, you will have to decide how you want to load the theme.
+
+You can either copy it straight into your `~/.config/lazygit/config.yml` file, or 
+add flags to lazygit which will merge it from our presets.
+
+
+### If you want to merge with your own config: 
+1. Choose the flavor you want (from `./themes`)
+2. Choose the accent you want from within the flavor directory.
+3. Replace the `theme` section of `~/.config/lazygit/config.yml` with the theme you want to use (from `themes`).
+
+    For example, if you want to use the catppuccin **mocha** theme, with the **blue** accent, then copy the contents of [`themes/mocha/blue.yml`](./themes/mocha/blue.yml) and paste them directly into your lazygit `config.yml` as follows:
 
     <details>
     <summary>config.yml</summary>
@@ -72,8 +81,23 @@
 				searchingActiveBorderColor:
 					- '#f9e2af'
     ```
-
     </details>
+4. Close and re-open lazygit to see your new theme!
+
+### If you want to use our preset:	
+1. Choose the flavor you want (from `./themes-mergable/`)
+2. Choose the accent you want from within the flavor directory.
+3. Copy your chosen theme file into `~/.config/lazygit` 
+4. Change your lazygit startup command (you may want to set a shell alias) to the following:
+```bash 
+	# Replacing <your-theme> with the relevant theme file
+	lazygit --use-config-file="$HOME/.config/lazygit/config.yml,<your-theme>.yml"
+	# or
+	LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml,<your-theme>.yml" lazygit
+```
+
+5. Close and re-open lazygit to see your new theme!
+
 
 ## 🙋 FAQ
 
