@@ -38,7 +38,9 @@
 
 1. Clone this repository locally
 2. Ensure `~/.config/lazygit` exists. If it doesn't, you can run `lazygit` to launch and setup the directory.
-3. Replace the `theme` section of `~/.config/lazygit/config.yml` with the theme you want to activate (from `themes`)
+3. Choose the flavor you want (located [in the themes directory of this repository](./themes))
+4. Choose the accent you want from within the flavor directory.
+3. Replace the `theme` section of `~/.config/lazygit/config.yml` with the theme you decided on.
 4. Close and reopen `lazygit`, and see your new theme!
 
 ## 🙋 FAQ
