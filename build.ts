@@ -22,6 +22,7 @@ const accents = [
 
 const start = performance.now()
 let count = 0
+
 Object.entries(variants)
   .forEach(([name, palette]) => {
     for (const accent of accents) {
@@ -49,4 +50,3 @@ Object.entries(variants)
   });
 
 console.log('Built', count, 'files in', performance.now() - start, 'ms');
-

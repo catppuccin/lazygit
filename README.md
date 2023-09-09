@@ -51,7 +51,6 @@ add flags to lazygit which will merge it from our presets.
 3. Replace the `theme` section of `~/.config/lazygit/config.yml` with the theme you want to use (from `themes`).
 
     For example, if you want to use the catppuccin **mocha** theme, with the **blue** accent, then copy the contents of [`themes/mocha/mocha-blue.yml`](./themes/mocha/mocha-blue.yml) and paste them directly into your lazygit `config.yml` as follows:
-
     <details>
     <summary>config.yml</summary>
 
@@ -97,7 +96,6 @@ add flags to lazygit which will merge it from our presets.
 ```
 
 5. Close and re-open lazygit to see your new theme!
-
 
 ## 🙋 FAQ
 
