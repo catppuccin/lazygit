@@ -34,21 +34,34 @@
 <img src="assets/mocha.webp"/>
 </details>
 
-## Usage
+## Installation
 
+### Finding your config directory
+Lazygit respects XDG (for macOS and Linux), and uses AppData on Windows. So, below are the default config directories:
+- Linux: `~/.config/lazygit/config.yml`
+- MacOS: `~/Library/Application Support/lazygit/config.yml`
+- Windows: `%APPDATA%\lazygit\config.yml`
+
+If you cannot find the config files there, or your changes are not taking effect, you can ask lazygit itself for the config directory:
+```sh
+lazygit --print-config-dir
+```
+Keep this directory in mind for all future steps, replacing `<config-dir>` when relevant.
+
+### Apply the theme
 1. Clone this repository locally
-2. Ensure `~/.config/lazygit` exists. If it doesn't, you can run `lazygit` to launch and setup the directory.
+2. Ensure the config directory exists. If it doesn't, you can run `lazygit` to launch and setup the directory.
 
 At this point, you will have to decide how you want to load the theme.
 
-You can either copy it straight into your `~/.config/lazygit/config.yml` file, or 
+You can either copy it straight into your `config.yml` file, or 
 add flags to lazygit which will merge it from our presets.
 
 
-### If you want to merge with your own config: 
+#### If you want to merge with your own config: 
 1. Choose the flavor you want (from `./themes`)
 2. Choose the accent you want from within the flavor directory.
-3. Replace the `theme` section of `~/.config/lazygit/config.yml` with the theme you want to use (from `themes`).
+3. Replace the `theme` section of `<config-dir>/config.yml` with the theme you want to use (from `themes`).
 
     For example, if you want to use the catppuccin **mocha** theme, with the **blue** accent, then copy the contents of [`themes/mocha/mocha-blue.yml`](./themes/mocha/mocha-blue.yml) and paste them directly into your lazygit `config.yml` as follows:
     <details>
@@ -83,16 +96,19 @@ add flags to lazygit which will merge it from our presets.
     </details>
 4. Close and re-open lazygit to see your new theme!
 
-### If you want to use our preset:	
+#### If you want to use our preset:	
 1. Choose the flavor you want (from `./themes-mergable/`)
 2. Choose the accent you want from within the flavor directory.
-3. Copy your chosen theme file into `~/.config/lazygit` 
+3. Copy your chosen theme file into `<config-dir>/lazygit` 
 4. Change your lazygit startup command (you may want to set a shell alias) to the following:
-```bash 
-	# Replacing <your-theme> with the relevant theme file
-	lazygit --use-config-file="$HOME/.config/lazygit/config.yml,<your-theme>.yml"
-	# or
-	LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml,<your-theme>.yml" lazygit
+```bash
+# This will instruct lazygit to open both config files, merge them, and then boot.
+# You can add more config files, delimited by a comma, to this list
+
+# Replacing <your-theme> with the relevant theme file
+lazygit --use-config-file="<config-dir>/config.yml,<your-theme>.yml"
+# or
+LG_CONFIG_FILE="<config-dir>/config.yml,<your-theme>.yml" lazygit
 ```
 
 5. Close and re-open lazygit to see your new theme!
