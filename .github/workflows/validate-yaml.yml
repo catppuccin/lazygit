@@ -1,0 +1,39 @@
+name: json-yaml-validate
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  json-yaml-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # download the latest schema so that we can avoid manually updating the
+      # schema in the repository
+      - name: Download lazygit configuration schema
+        run: |-
+          mkdir schemas
+          wget -O schemas/lazygit-schema.json https://raw.githubusercontent.com/jesseduffield/lazygit/master/schema/config.json
+
+      - name: Validate themes-mergable
+        id: validate-themes-mergable
+        uses: GrantBirki/json-yaml-validate@v2.6.0
+        with:
+          base_dir: themes-mergable
+          json_schema: schemas/lazygit-schema.json
+
+          # This validator action supports validating both yaml and json files.
+          # However, the yaml validator it uses is "limited", and the
+          # recommendation is to use the json validator instead.
+          yaml_as_json: "true"
+
+          # This value can be found at the top of the lazygit schema url above
+          # in the "$schema" property. The schemas supported by the validator
+          # are documented in
+          # https://github.com/marketplace/actions/json-yaml-validate#inputs-
+          json_schema_version: "draft-2020-12"
