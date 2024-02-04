@@ -25,7 +25,7 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
 
       - run: |
-          curl -fsSL https://github.com/catppuccin/toolbox/releases/download/whiskers-v1.1.4/whiskers-x86_64-unknown-linux-gnu -o whiskers
+          curl -fsSL https://github.com/catppuccin/toolbox/releases/download/whiskers-v1.1.4/whiskers-x86_64-unknown-linux-gnu -o $RUNNER_TEMP/whiskers
           chmod +x $RUNNER_TEMP/whiskers
           echo $RUNNER_TEMP >> $GITHUB_PATH
         if: ${{ steps.release.outputs.release_created }}
