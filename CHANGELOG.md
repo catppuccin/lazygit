@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/catppuccin/lazygit/compare/v1.0.2...v1.0.3) (2024-02-04)
+
+
+### Miscellaneous Chores
+
+* release ([37d3909](https://github.com/catppuccin/lazygit/commit/37d39091a88f205f6551ec1c89e7c618ed0ec58a))
+
 ## [1.0.2](https://github.com/catppuccin/lazygit/compare/v1.0.1...v1.0.2) (2024-02-04)
 
 
