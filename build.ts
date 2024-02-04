@@ -1,7 +1,8 @@
 #!/usr/bin/env -S deno run --allow-read --allow-write --allow-env
-import {  variants } from "npm:@catppuccin/palette@0.1.5";
+import { variants } from "npm:@catppuccin/palette@0.1.5";
 import { stringify as stringifyYaml } from "https://deno.land/std@0.201.0/yaml/stringify.ts";
 
+import { type Version0_40_2 } from "./schemas.ts"
 
 const accents = [
   "rosewater",
@@ -26,7 +27,7 @@ let count = 0
 Object.entries(variants)
   .forEach(([name, palette]) => {
     for (const accent of accents) {
-      const theme = {
+      const theme: Version0_40_2 = {
         theme: {
           activeBorderColor: [palette[accent].hex, "bold"],
           inactiveBorderColor: [palette.subtext0.hex],
