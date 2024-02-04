@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/catppuccin/lazygit/compare/v1.1.0...v1.1.1) (2024-02-04)
+
+
+### Bug Fixes
+
+* update CI tooling ([28baa9a](https://github.com/catppuccin/lazygit/commit/28baa9add76d22701301b96b9559ddc9c81f1014))
+
 ## [1.1.0](https://github.com/catppuccin/lazygit/compare/v1.0.3...v1.1.0) (2024-02-04)
 
 
