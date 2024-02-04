@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/catppuccin/lazygit/compare/v1.1.1...v2.0.0) (2024-02-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove deprecated selectedRangeBgColor key ([#31](https://github.com/catppuccin/lazygit/issues/31))
+
+### Features
+
+* remove deprecated selectedRangeBgColor key ([#31](https://github.com/catppuccin/lazygit/issues/31)) ([4e06002](https://github.com/catppuccin/lazygit/commit/4e06002d9d84a470b63226827dd2c3d827499793))
+
 ## [1.1.1](https://github.com/catppuccin/lazygit/compare/v1.1.0...v1.1.1) (2024-02-04)
 
 
