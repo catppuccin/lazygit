@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/catppuccin/lazygit/compare/v1.0.3...v1.1.0) (2024-02-04)
+
+
+### Features
+
+* fix release tagging ([a71dd12](https://github.com/catppuccin/lazygit/commit/a71dd12fd9eaf27d4c697ab91a9638950d5dda75))
+
 ## [1.0.3](https://github.com/catppuccin/lazygit/compare/v1.0.2...v1.0.3) (2024-02-04)
 
 
