@@ -11,8 +11,6 @@ gui:
       - '#8caaee'
     selectedLineBgColor:
       - '#414559'
-    selectedRangeBgColor:
-      - '#414559'
     cherryPickedCommitBgColor:
       - '#51576d'
     cherryPickedCommitFgColor:
