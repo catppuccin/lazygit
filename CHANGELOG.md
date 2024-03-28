@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/catppuccin/lazygit/compare/v2.0.0...v2.1.0) (2024-03-28)
+
+
+### Features
+
+* support lazygit 0.41.0 ([#33](https://github.com/catppuccin/lazygit/issues/33)) ([dd77f4b](https://github.com/catppuccin/lazygit/commit/dd77f4b652a86361120a37fcae5c2aa9dfcd1340))
+
 ## [2.0.0](https://github.com/catppuccin/lazygit/compare/v1.1.1...v2.0.0) (2024-02-04)
 
 
