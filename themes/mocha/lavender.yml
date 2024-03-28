@@ -18,3 +18,6 @@ theme:
     - '#cdd6f4'
   searchingActiveBorderColor:
     - '#f9e2af'
+
+authorColors:
+  '*': '#b4befe'
