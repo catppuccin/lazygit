@@ -21,3 +21,6 @@ gui:
       - '#cad3f5'
     searchingActiveBorderColor:
       - '#eed49f'
+
+  authorColors:
+    '*': '#b7bdf8'
