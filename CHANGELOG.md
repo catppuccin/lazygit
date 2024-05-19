@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/catppuccin/lazygit/compare/v2.1.0...v2.2.0) (2024-05-19)
+
+
+### Bug Fixes
+
+* ci; release for lazygit 0.42.0 ([49916ac](https://github.com/catppuccin/lazygit/commit/49916ac0fc1d74cdd150c38b9db18d1d244bd798))
+
 ## [2.1.0](https://github.com/catppuccin/lazygit/compare/v2.0.0...v2.1.0) (2024-03-28)
 
 
