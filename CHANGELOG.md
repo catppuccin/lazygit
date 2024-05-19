@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/catppuccin/lazygit/compare/v2.1.0...v2.2.0) (2024-05-19)
+
+
+### Features
+
+* use terawhiskers ([#35](https://github.com/catppuccin/lazygit/issues/35)) ([30bff2e](https://github.com/catppuccin/lazygit/commit/30bff2e6d14ca12a09d71e5ce4e6a086b3e48aa6))
+
 ## [2.1.0](https://github.com/catppuccin/lazygit/compare/v2.0.0...v2.1.0) (2024-03-28)
 
 
