@@ -80,8 +80,6 @@ add flags to lazygit which will merge it from our presets.
          - '#89b4fa'
        selectedLineBgColor:
          - '#313244'
-       selectedRangeBgColor:
-         - '#313244'
        cherryPickedCommitBgColor:
          - '#45475a'
        cherryPickedCommitFgColor:
