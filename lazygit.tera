@@ -1,6 +1,6 @@
 ---
 whiskers:
-  version: 2.5.1
+  version: ^2.9.0
   matrix:
     - variant: ["themes", "themes-mergable"]
     - flavor
@@ -16,20 +16,26 @@ theme:
     - bold
   inactiveBorderColor:
     - '#{{ palette.subtext0.hex }}'
+  searchingActiveBorderColor:
+    - '#{{ palette.yellow.hex }}'
   optionsTextColor:
     - '#{{ palette.blue.hex }}'
   selectedLineBgColor:
     - '#{{ palette.surface0.hex }}'
-  cherryPickedCommitBgColor:
-    - '#{{ palette.surface1.hex }}'
+  inactiveViewSelectedLineBgColor:
+    - '#{{ palette.overlay0.hex }}'
   cherryPickedCommitFgColor:
     - '#{{ palette[accent].hex }}'
+  cherryPickedCommitBgColor:
+    - '#{{ palette.surface1.hex }}'
+  markedBaseCommitFgColor:
+    - '#{{ palette.blue.hex }}'
+  markedBaseCommitBgColor:
+    - '#{{ palette.yellow.hex }}'
   unstagedChangesColor:
     - '#{{ palette.red.hex }}'
   defaultFgColor:
     - '#{{ palette.text.hex }}'
-  searchingActiveBorderColor:
-    - '#{{ palette.yellow.hex }}'
 
 authorColors:
   '*': '#{{ palette.lavender.hex }}'
