@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/catppuccin/lazygit/compare/v2.2.0...v2.3.0) (2026-04-01)
+
+
+### Features
+
+* support new config colors ([#62](https://github.com/catppuccin/lazygit/issues/62)) ([9e36639](https://github.com/catppuccin/lazygit/commit/9e36639c9a5f241ec05c70ecfcf87032be45ea3f))
+
 ## [2.2.0](https://github.com/catppuccin/lazygit/compare/v2.1.0...v2.2.0) (2024-05-19)
 
 
