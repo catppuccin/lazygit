@@ -36,9 +36,8 @@ theme:
     - '#{{ palette.red.hex }}'
   defaultFgColor:
     - '#{{ palette.text.hex }}'
-
-authorColors:
-  '*': '#{{ palette.lavender.hex }}'
+  authorColors:
+    '*': '#{{ palette.lavender.hex }}'
 {%- endmacro %}
 
 {%- if variant == "themes" -%}
