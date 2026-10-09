@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.1](https://github.com/catppuccin/lazygit/compare/v2.3.0...v2.3.1) (2026-10-09)
+
+
+### Bug Fixes
+
+* move 'gui.authorColors' to 'gui.theme.authorColors' ([#65](https://github.com/catppuccin/lazygit/issues/65)) ([f50a723](https://github.com/catppuccin/lazygit/commit/f50a723711ccb524691652cd870c94415aaa4669))
+
 ## [2.3.0](https://github.com/catppuccin/lazygit/compare/v2.2.0...v2.3.0) (2026-04-01)
 
 
